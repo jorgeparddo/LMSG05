@@ -1,0 +1,15 @@
+Ejercicio 1:
+Consulta XPATH:
+    /artistas/artista[nacimiento >= 1501 and nacimiento <= 1600]/concat(@cod, ' - ', nombreCompleto)
+
+Ejercicio 2:
+Consulta XPATH:
+    sum(/artistas/artista/nacimiento) div count(/artistas/artista)
+
+Ejercicio 3:
+Consulta XPATH:
+    /artistas/artista[@cod != 'a102' and fallecimiento]/concat(nombreCompleto, ' murió a los ', fallecimiento - nacimiento, ' años.')
+
+Ejercicio 4:
+Consulta XPATH:
+    /artistas/artista[@cod != 'a102' and fallecimiento - nacimiento < 75]/concat(nombreCompleto, ' nació en ', pais, ' y falleció con ', fallecimiento - nacimiento, ' años')
